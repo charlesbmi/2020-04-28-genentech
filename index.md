@@ -77,7 +77,7 @@ address.
 {% if page.latitude and page.longitude %}
 <p id="where">
   <strong>Where:</strong>
-  {{page.address}}.
+  {{page.address}}. Link will be sent out to participants.
 </p>
 {% endif %}
 
@@ -87,8 +87,7 @@ DATE
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
-  {% include workshop_calendar.html %}
+  <strong>When:</strong> Apr 29, Apr 30, May 1, May 4, May 5, May 8, 2020.
 </p>
 {% endif %}
 
@@ -110,7 +109,8 @@ special instructions.
 {% endcomment %}
 
 <p id="accessibility">
-  Materials will be provided in advance of the workshop. If we can help make
+  Lesson materials are freely available on the
+  <a href=https://software-carpentry.org/lessons/>Software Carpentry website</a>. If we can help make
   learning easier for you, please
   get in touch (using contact details below), and we will
   attempt to accommodate.
