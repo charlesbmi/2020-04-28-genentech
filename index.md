@@ -103,6 +103,13 @@ Modify the block below if there are any special requirements.
 </p>
 
 {% comment %}
+ACCESSIBILITY
+
+Modify the block below if there are any barriers to accessibility or
+special instructions.
+{% endcomment %}
+
+<p id="accessibility">
   Materials will be provided in advance of the workshop. If we can help make
   learning easier for you, please
   get in touch (using contact details below), and we will
