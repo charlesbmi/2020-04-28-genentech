@@ -107,22 +107,24 @@ def check_humandate(date):
     and 4-digit year.  Examples include 'Feb 18-20, 2025' and 'Feb 18
     and 20, 2025'.  It may be in languages other than English, but the
     month name should be kept short to aid formatting of the main
-    Carpentries web site.
     """
 
     if ',' not in date:
         return False
 
-    month_dates, year = date.split(',')
+    date_list = date.split(', ')
+    month_dates = date_list[:-1]
+    year = date_list[-1]
 
-    # The first three characters of month_dates are not empty
-    month = month_dates[:3]
-    if any(char == ' ' for char in month):
-        return False
+    # The first three characters of month are not empty
+    for month_date in month_dates:
+        month = month_date[:3]
+        if any(char == ' ' for char in month):
+            return False
 
-    # But the fourth character is empty ("February" is illegal)
-    if month_dates[3] != ' ':
-        return False
+        # But the fourth character is empty ("February" is illegal)
+        if month_date[3] != ' ':
+            return False
 
     # year contains *only* numbers
     try:
