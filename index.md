@@ -87,7 +87,7 @@ DATE
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong> Apr 29, Apr 30, May 1, May 4, May 5, May 8, 2020.
+  <strong>When:</strong> Apr 29, Apr 30, May 1, May 4, May 5, May 8, 2020. {{page.humantime}}.
 </p>
 {% endif %}
 
@@ -110,7 +110,7 @@ special instructions.
 
 <p id="accessibility">
   Lesson materials are freely available on the
-  <a href=https://software-carpentry.org/lessons/>Software Carpentry website</a>. If we can help make
+  <a href="https://software-carpentry.org/lessons/">Software Carpentry website</a>. If we can help make
   learning easier for you, please
   get in touch (using contact details below), and we will
   attempt to accommodate.
